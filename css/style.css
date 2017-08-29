@@ -87,7 +87,7 @@ button:hover{
 }
 .fileCard{
     position: absolute;
-    bottom: 74px;
+    bottom: 64px;
     border: 1px solid #ddd;
     height: 550px;
     width: 500px;
@@ -126,11 +126,32 @@ button:hover{
 
 .insideFileCard{
     position: absolute;
-    top: 40px;
+    top: 29px;
     z-index: 9999;
-    right: 40px;
-    height: 81px;
-    width: 460px;
+    right: 21px;
+    height: 300px;
+    width: 500px;
+}
+.insideFileCard .head{
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.insideFileCard .head .title{
+    display: inline-block;
+    width: 50%;
+    font-size: 12px;
+    font-weight: bold;
+}
+.insideFileCard .head .close{
+    float: right;
+}
+.insideFileCard #form{
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #dddddd;
+}
+.fileCard,.insideFileCard{
+    display: none;
 }
 #dropped{
     border: 2px dashed #268eff;
@@ -142,4 +163,15 @@ button:hover{
 }
 #file{
     display: none;
+}
+.browseFromComputer{
+    text-align: right;
+    font-size: 12px;
+    color: #268eff;
+    cursor: pointer;
+    padding: 5px;
+}
+.addNewItem{
+    margin-left: 20px;
+    border: none;
 }
