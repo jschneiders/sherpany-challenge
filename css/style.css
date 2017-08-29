@@ -91,7 +91,7 @@ button:hover{
     border: 1px solid #ddd;
     height: 550px;
     width: 500px;
-    z-index: 9999;
+    z-index: 9998;
     background-color: #fff;
     right: 20px;
 
@@ -122,4 +122,24 @@ button:hover{
     border-right: 11px solid transparent;
     border-top: 11px solid #fff;
     margin-top: -35px;
+}
+
+.insideFileCard{
+    position: absolute;
+    top: 40px;
+    z-index: 9999;
+    right: 40px;
+    height: 81px;
+    width: 460px;
+}
+#dropped{
+    border: 2px dashed #268eff;
+    padding: 35px;
+    text-align: center;
+}
+#dropped span{
+    color: #268eff;
+}
+#file{
+    display: none;
 }
