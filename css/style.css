@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    color: #444;
+}
+
+.body{
+    /*border: 1px solid #dcdcdc;*/
+}
+.title{
+    width: 100%;
+}
+.title h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 15px 25px;
+}
+.header{
+    border-bottom: 1px solid #ddd;
+}
+.header a{
+    margin: 15px 25px 0;
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: #444;
+}
+.header a:active,
+.header a.active{
+    border-bottom: 1px solid #268eff;
+}
+.header a.deactive{
+    color: #c1c1c1;
+}
+.agendaTab ul{
+    margin: 0;
+    padding: 0;
+}
+.agendaTab ul li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    background-color: #f8f8f8;
+}
+.agendaTab ul li.active{
+    background-color: transparent;
+}
+.agendaTab ul li span{
+    margin-left: 35px;
+    font-size: 12px;
+    font-weight: bold;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    width: 100%;
+}
+.button{
+    text-align: left;
+    width: 50%;
+    display: inline-block;
+}
+button{
+    border: 1px solid #268eff;
+    background-color: #268eff;
+    color: #fff;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #fff;
+    color: #268eff;
+}
+.icons{
+    text-align: right;
+    width: 46%;
+    display: inline-block;
+}
+.icons i{
+    margin: 5px;
+}
+.fileCard{
+    position: absolute;
+    bottom: 74px;
+    border: 1px solid #ddd;
+    height: 550px;
+    width: 500px;
+    z-index: 9999;
+    background-color: #fff;
+    right: 20px;
+
+    -webkit-box-shadow: -3px -3px 5px 0px rgba(221,221,221,0.75);
+    -moz-box-shadow: -3px -3px 5px 0px rgba(221,221,221,0.75);
+    box-shadow: -3px -3px 5px 0px rgba(221,221,221,0.75);
+}
+.fileCard:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 462px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid #ddd;
+    margin-top: 550px;
+}
+.fileCard:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 462px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid #fff;
+    margin-top: -35px;
+}
