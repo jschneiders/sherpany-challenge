@@ -28,7 +28,7 @@
             <div class="insideFileCard">
                 <div class="head">
                     <div class="title">Add documents to agenda items</div>
-                    <div class="close">
+                    <div class="close" id="closeFileCard">
                         <i class="fa fa-times" aria-hidden="true"></i>
                     </div>
                 </div>                
@@ -42,10 +42,23 @@
                     </div>
                     <div class="browseFromComputer" id="browseFromComputer">Browse your computer</div>
                 </form>
+                <div class="countFiles">
+                    Available documents (<span id="filesCounter">0</span>)
+                </div>
+                <div class="files" id="showFiles"></div>
+                <div class="addFilesToAgenda">
+                    <span>Agenda item</span>
+                    <select id="agendaItemSelect"></select>
+                    <button id="addFile">Add</button>
+                </div>
+            </div>
+            <div class="publishCard" id="publishCard">
+                <p>This application is waiting for a backend to publish your agenda (:</p>
+                <button id="closePublishCard">Ok</button>
             </div>
             <footer>
                 <div class="button">
-                    <button>Publish</button>
+                    <button id="publishButton">Publish</button>
                 </div>
                 <div class="icons">
                     <i class="fa fa-envelope-o" aria-hidden="true"></i>
